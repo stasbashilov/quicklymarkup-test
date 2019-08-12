@@ -1,0 +1,58 @@
+.form-wrapper {
+    background: $white;
+    padding: 30px;
+    padding-bottom: 50px;
+    margin-bottom: 30px;
+
+    h3 {
+        font-size: 20px;
+        font-weight: 400;
+        margin-bottom: 30px;
+    }
+
+}
+
+.project-form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    @media (min-width: 768px) {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+
+
+    &__item {
+        width: 100%;
+        margin-bottom: 30px;
+
+        .custom-select {
+            height: 45px;
+        }
+
+        .custom-select-wrapper {
+            width: 100%;
+        }
+
+        .custom-select-wrapper::after {
+            top: 65%;
+        }
+
+        label {
+            color: $text-gray;
+            font-size: 14px;
+            font-weight: 400;
+        }
+
+        input {
+            width: 100%;
+        }
+
+        @media (min-width: 768px) {
+            max-width: 366px;
+            margin-right: 45px;
+        }
+    }
+}
